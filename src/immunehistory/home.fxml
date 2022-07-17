@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffde6b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="immunehistory.home">
+   <children>
+      <Label layoutX="304.0" layoutY="22.0" style="-fx-font-size: 40; -fx-font-family: Rubik;" text="Immune History" textAlignment="CENTER" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="88.0" layoutY="186.0" onMouseClicked="#clicked" style="-fx-font-size: 30;" text="User" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="usericon" fitHeight="232.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user_default.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="371.0" layoutY="186.0" style="-fx-font-size: 30;" text="Doctor">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/doctor_default.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label contentDisplay="TOP" layoutX="630.0" layoutY="186.0" style="-fx-font-size: 30;" text="Statics">
+         <graphic>
+            <ImageView fitHeight="250.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lifey_favicon.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>
